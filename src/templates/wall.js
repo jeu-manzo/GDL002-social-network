@@ -1,15 +1,18 @@
 let wallTemplate = `
-<div>
-<textarea placeholder='escribe aqui'></textarea>
+<nav>
+<p id='saludo'></p>
+<button id='logout'>Cerrar sesión</button>
+</nav>
 
-<button id='publicar'>publicar</button>
+<form id='submit-post'>
+<textarea class='post-area' name='comment' placeholder='escribe aqui'></textarea>
+
+<button id='publish'>publicar</button>
+</form>
+
+<div id='post-list'>
+
 </div>
-
-
-<section id='login'>
-  <p id='saludo'></p>
-  <button id='logout'>Cerrar sesión</button>
-</section>
 `;
 
 export default wallTemplate;

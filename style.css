@@ -9,3 +9,19 @@
     flex-flow: row wrap;
     justify-content: center;
 }
+
+#submit-post {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#each-post {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    border: 1px black solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

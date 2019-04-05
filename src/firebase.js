@@ -50,7 +50,25 @@ export function logIn() {
       });
     }
 
+//Postea
 
+// const postSpace = document.querySelector('.post-area').value;
+// const datePublished = '18 de abril';
+
+// export function addPost() {
+//   db.collection("post").add({
+//     comment: postSpace,
+//     date: datePublished,
+//     user: firebase.auth().currentUser
+//   })
+//   .then(function(docRef) {
+//     console.log("Document written with ID: ", docRef.id);
+//   })
+//   .catch(function(error) {
+//     console.error("Error adding document: ", error);
+//   });
+  
+// }
 
 
 
@@ -58,23 +76,4 @@ export function logIn() {
 // document.getElementById('logout').addEventListener('click',logOut);
 export function logOut() {
     firebase.auth().signOut();
-}
-
-// document.getElementById("logInWindow").addEventListener('click',logInOption);
-// function logInOption () {
-//     console.log("holis login");
-//     elementClick('/ingresar');
-// }
-//
-// document.getElementById("registerWindow").addEventListener('click',registerOption);
-// function registerOption () {
-//   console.log("holi registrar");
-//     elementClick('/registrar');
-// }
-
-
-// export default {
-//   signUp,
-//   logIn,
-//   logOut
-// }
+};
