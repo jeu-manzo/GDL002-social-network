@@ -1,0 +1,24 @@
+{
+  "name": "pruebas-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeu-manzo/pruebas-SPA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeu-manzo/pruebas-SPA/issues"
+  },
+  "homepage": "https://github.com/jeu-manzo/pruebas-SPA#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
