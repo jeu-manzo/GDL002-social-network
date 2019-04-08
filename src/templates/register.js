@@ -1,4 +1,5 @@
 let registerTemplate = `
+<section id='register'>
 <section class="tabs">
   <button class="logInWindow">Iniciar Sesión</button>
   <button class="registerWindow">Registrarse</button>
@@ -11,6 +12,7 @@ let registerTemplate = `
     <button class='btn-register'>Register</button>
   </section>
 </div>
+</section>
 `;
 
 export default registerTemplate;

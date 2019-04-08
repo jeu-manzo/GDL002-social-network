@@ -19,7 +19,6 @@ function homeEvents() {
 
   function logInOption(event) {
     event.preventDefault();
-    console.log('loginoption');
     elementClick('/ingresar');
   }
 
@@ -37,6 +36,7 @@ if (btnSignUp) {
 
 if (btnLogIn) {
   btnLogIn.addEventListener('click', logIn);
+
 }
 }
 
@@ -70,8 +70,8 @@ const postList = document.querySelector('#post-list');
 function createPost(doc){
   let section = document.createElement('section');
   let header = document.createElement('header');
-  let user2 = document.createElement('span');
-  let date = document.createElement('span');
+  let user2 = document.createElement('div');
+  let date = document.createElement('div');
   let divComment = document.createElement('div');
   let headerComment = document.createElement('div');
   let edit = document.createElement('button');
@@ -103,13 +103,34 @@ function createPost(doc){
     let id = e.target.parentElement.parentElement.parentElement.getAttribute('data-id');
     db.collection('post').doc(id).delete();
   })
+
+
+// //Editar data
+// edit.addEventListener('click', (e) => {
+//   e = doc.data().comment;
+//   let publishArea = document.querySelector('.post-area');
+//   publishArea.value = e;
+//
+//   let btnPublish = document.querySelector('#publish');
+//   btnPublish.innerHTML = 'Editar';
+//
+//
+//   const form = document.querySelector('#submit-post');
+//   form.comment.value = '';
+//
+//     btnPublish.addEventListener('click', (e) => {
+//       e.preventDefault();
+//       db.collection("post").update({
+//         comment: form.comment.value
+//       })
+//     })
+//
+//
+//
+// })
 }
 
-// db.collection("post").orderBy('date').get().then((querySnapshot) => {
-//   querySnapshot.forEach((doc) => {
-//   createPost(doc);
-//   });
-// });
+
 
 //Escuha en tiempo real
 db.collection("post").orderBy('date').onSnapshot(snapshot => {
@@ -125,6 +146,8 @@ db.collection("post").orderBy('date').onSnapshot(snapshot => {
 })
 
 }
+
+
 
 export default {
   homeEvents,

@@ -1,4 +1,5 @@
 let logInTemplate = `
+<section id='log-in'>
 <section class="tabs">
   <button class="logInWindow">Iniciar Sesión</button>
   <button class="registerWindow">Registrarse</button>
@@ -11,6 +12,7 @@ let logInTemplate = `
     <button class='btn-logIn'>Iniciar Sesión</button>
   </section>
 </div>
+</section>
 `;
 
 export default logInTemplate;
