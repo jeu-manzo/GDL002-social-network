@@ -6,7 +6,7 @@ function homeEvents() {
   const signUpTab = document.querySelector('.registerWindow');
   const btnSignUp = document.querySelector('.btn-register');
   const btnLogIn = document.querySelector('.btn-logIn');
-
+  console.log("holi");
 
   if (logInTab) {
     logInTab.addEventListener('click', logInOption);
